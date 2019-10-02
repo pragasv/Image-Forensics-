@@ -1,0 +1,15 @@
+clc;
+clear all;
+close all;
+%result = blockproc(img, [57 57], aux_fun, 'TrimBorder', false)
+
+img = imread('Original\ucid\ImageDataSet\ucid00142sp.tif');
+img = rgb2gray(img);
+img= double(img);
+aux_fun = @(block_info) YourFunction2(block_info.data);
+result = blockproc(img,[256 256], aux_fun, 'TrimBorder', false);
+%pmap = blockproc(img,[57 57], aux_fun, 'TrimBorder', false);
+
+subplot(2, 3, 3);
+imshow(img);
+    
