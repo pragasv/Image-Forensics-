@@ -15,3 +15,4 @@ In addition digital images play a vital role in many different areas such as cri
 - Finding the relevant datasets.
 - Test Accuracy with the different approaches that are taken under same Image Forgery Type.
 
+![](capture.png)
